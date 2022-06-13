@@ -87,6 +87,10 @@ main {
   margin-top: 10px;
 }
 
+#output:disabled {
+  background: #fff;
+}
+
 #outputType {
   width: 200px;
   padding: 10px;
