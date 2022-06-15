@@ -1,4 +1,4 @@
-# convertypeExtension
+# ConverType Chrome Extension - convert where ever you are...
 
 The converType Chrome Extension gives you nearly all features the original website has in a single chrome extension. Due to the small screen space this extension takes, you can do other things in the process of converting values. 
 
