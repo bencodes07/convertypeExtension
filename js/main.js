@@ -398,9 +398,283 @@ function checkConvType() {
 
 
 } else if (convType.value == 'Weight') {
+    let input = document.getElementById('input').value;
+    let inputTypeValue = document.getElementById('inputType').value;
+    let resultType = document.getElementById('outputType').value;
+    const output = document.getElementById('output');
+    if (inputTypeValue === 'Tonne') {
+      // Tonne
+      if(resultType == 'Tonne') {
+        output.value = input;
+      } 
 
+      // Kilogram
+      else if(resultType === 'Kilogram') {
+        let calcResult = input * 1000;
+        output.value = calcResult;
+      }
+
+      // Gram
+      else if(resultType === 'Gram') {
+        let calcResult = input * 1000000;
+        output.value = calcResult;
+      }
+
+      // Milligram
+      else if(resultType === 'Milligram') {
+        let calcResult = input * 1000000000;
+        output.value = calcResult;
+      }
+
+      // Pound
+      else if(resultType === 'Pound') {
+        let calcResult = input * 2.20462;
+        output.value = calcResult;
+      }
+
+      // Ounce 
+      else if(resultType === 'Ounce') {
+        let calcResult = input * 35.274;
+        output.value = calcResult;
+      }
+    } else if (inputTypeValue === 'Kilogram') {
+      // Tonne
+      if(resultType == 'Tonne') {
+        let calcResult = input / 1000;
+        output.value = calcResult;
+      }
+
+      // Kilogram
+      else if(resultType === 'Kilogram') {
+        output.value = input;
+      }
+
+      // Gram
+      else if(resultType === 'Gram') {
+        let calcResult = input * 1000;
+        output.value = calcResult;
+      }
+
+      // Milligram
+      else if(resultType === 'Milligram') {
+        let calcResult = input * 1000000;
+        output.value = calcResult;
+      }
+
+      // Pound
+      else if(resultType === 'Pound') {
+        let calcResult = input * 2.20462;
+        output.value = calcResult;
+      }
+
+      // Ounce
+      else if(resultType === 'Ounce') {
+        let calcResult = input * 35.274;
+        output.value = calcResult;
+      }
+    } else if (inputTypeValue === 'Gram') {
+      // Tonne
+      if(resultType == 'Tonne') {
+        let calcResult = input / 1000000;
+        output.value = calcResult;
+      }
+
+      // Kilogram
+      else if(resultType === 'Kilogram') {
+        let calcResult = input / 1000;
+        output.value = calcResult;
+      }
+
+      // Gram
+      else if(resultType === 'Gram') {
+        output.value = input;
+      }
+
+      // Milligram
+      else if(resultType === 'Milligram') {
+        let calcResult = input * 1000;
+        output.value = calcResult;
+      }
+
+      // Pound
+      else if(resultType === 'Pound') {
+        let calcResult = input * 0.00220462;
+        output.value = calcResult;
+      }
+
+      // Ounce
+      else if(resultType === 'Ounce') {
+        let calcResult = input * 0.035274;
+        output.value = calcResult;
+      }
+    } else if (inputTypeValue === 'Milligram') {
+      // Tonne
+      if(resultType == 'Tonne') {
+        let calcResult = input / 1000000000;
+        output.value = calcResult;
+      }
+
+      // Kilogram
+      else if (resultType === 'Kilogram') {
+        let calcResult = input / 1000000;
+        output.value = calcResult;
+      }
+
+      // Gram
+      else if(resultType === 'Gram') {
+        let calcResult = input / 1000;
+        output.value = calcResult;
+      }
+
+      // Milligram
+      else if (resultType === 'Milligram') {
+        output.value = input;
+      }
+
+      // Pound
+      else if (resultType === 'Pound') {
+        let calcResult = input * 0.0000220462;
+        output.value = calcResult;
+      }
+
+      // Ounce 
+      else if (resultType === 'Ounce') {
+        let calcResult = input * 0.000035274;
+        output.value = calcResult;
+      }
+    } else if (inputTypeValue === 'Pound') {
+      // Tonne
+      if(resultType == 'Tonne') {
+        let calcResult = input / 2.20462;
+        output.value = calcResult;
+      }
+
+      // Kilogram
+      else if(resultType === 'Kilogram') {
+        let calcResult = input / 2.20462;
+        output.value = calcResult;
+      }
+
+      // Gram
+      else if(resultType === 'Gram') {
+        let calcResult = input * 453.592;
+        output.value = calcResult;
+      }
+
+      // Milligram
+      else if(resultType === 'Milligram') {
+        let calcResult = input * 453592;
+        output.value = calcResult;
+      }
+
+      // Pound
+      else if(resultType === 'Pound') {
+        output.value = input;
+      }
+
+      // Ounce
+      else if(resultType === 'Ounce') {
+        let calcResult = input * 16;
+        output.value = calcResult;
+      }
+    } else if (inputTypeValue === 'Ounce') {
+      // Tonne
+      if(resultType == 'Tonne') {
+        let calcResult = input / 35.274;
+        output.value = calcResult;
+      }
+
+      // Kilogram
+      else if(resultType === 'Kilogram') {
+        let calcResult = input / 35.274;
+        output.value = calcResult;
+      }
+
+      // Gram
+      else if(resultType === 'Gram') {
+        let calcResult = input * 28.3495;
+        output.value = calcResult;
+      }
+
+      // Milligram
+      else if (resultType === 'Milligram') {
+        let calcResult = input * 28349.5;
+        output.value = calcResult;
+      }
+
+      // Pound
+      else if(resultType === 'Pound') {
+        let calcResult = input / 16;
+        output.value = calcResult;
+      }
+
+      // Ounce
+      else if(resultType === 'Ounce') {
+        output.value = input;
+      }
+
+
+
+
+    }
 } else if (convType.value == 'Temperature') {
+  let input = document.getElementById('input').value;
+  let inputTypeValue = document.getElementById('inputType').value;
+  let resultType = document.getElementById('outputType').value;
+  const output = document.getElementById('output');
+  if (inputTypeValue == 'Celsius') {
+    // Celsius 
+    if(resultType == 'Celsius') {
+      output.value = input;
+      console.log('Both celsius')
+    }
 
+    // Fahrenheit
+    if(resultType === 'Fahrenheit') {
+      let calcResult = input * 1.8 + 32;
+      output.value = calcResult;
+    }
+
+    // Kelvin
+    else if(resultType === 'Kelvin') {
+      let calcResult = input + 273.15;
+      output.value = calcResult;
+    }
+  } else if (inputTypeValue === 'Fahrenheit') {
+    // Celsius
+    if(resultType === 'Celsius') {
+      let calcResult = (input - 32) / 1.8;
+      output.value = calcResult;
+    }
+
+    // Fahrenheit
+    if(resultType === 'Fahrenheit') {
+      output.value = input;
+    }
+
+    // Kelvin
+    else if(resultType === 'Kelvin') {
+      let calcResult = (input + 459.67) * 5/9;
+      output.value = calcResult;
+    }
+  } else if (inputTypeValue === 'Kelvin') {
+    // Celsius
+    if(resultType === 'Celsius') {
+      let calcResult = input - 273.15;
+      output.value = calcResult;
+    }
+
+    // Fahrenheit
+    else if(resultType === 'Fahrenheit') {
+      let calcResult = input * 9/5 - 459.67;
+      output.value = calcResult;
+    }
+
+    // Kelvin
+    else if(resultType === 'Kelvin') {
+      output.value = input;
+    }
+  }
 }
 
 window.addEventListener('load', () => {
@@ -685,37 +959,37 @@ function changeConvType() {
 
 
     const kg = document.createElement('option');
-    kg.value = 'Kilogramm';
-    kg.innerText = 'Kilogramm';
+    kg.value = 'Kilogram';
+    kg.innerText = 'Kilogram';
     inputType.appendChild(kg);
 
     const kg2 = document.createElement('option');
-    kg2.value = 'Kilogramm';
-    kg2.innerText = 'Kilogramm';
+    kg2.value = 'Kilogram';
+    kg2.innerText = 'Kilogram';
     outputType.appendChild(kg2);
 
 
 
-    const gramm = document.createElement('option');
-    gramm.value = 'Gramm';
-    gramm.innerText = 'Gramm';
-    inputType.appendChild(gramm);
+    const gram = document.createElement('option');
+    gram.value = 'Gram';
+    gram.innerText = 'Gram';
+    inputType.appendChild(gram);
 
-    const gramm2 = document.createElement('option');
-    gramm2.value = 'Gramm';
-    gramm2.innerText = 'Gramm';
-    outputType.appendChild(gramm2);
+    const gram2 = document.createElement('option');
+    gram2.value = 'Gram';
+    gram2.innerText = 'Gram';
+    outputType.appendChild(gram2);
 
 
 
     const mg = document.createElement('option');
-    mg.value = 'Milligramm';
-    mg.innerText = 'Milligramm';
+    mg.value = 'Milligram';
+    mg.innerText = 'Milligram';
     inputType.appendChild(mg);
 
     const mg2 = document.createElement('option');
-    mg2.value = 'Milligramm';
-    mg2.innerText = 'Milligramm';
+    mg2.value = 'Milligram';
+    mg2.innerText = 'Milligram';
     outputType.appendChild(mg2);
 
 
