@@ -2,13 +2,19 @@
   "manifest_version": 2,
   "name": "ConverType",
   "version": "1.0",
-  "description": "ConverType",
+  "description": "This is the ConverType extension, that allows you to use a lot of the features the Website has in a small window. You can brows the web, search for things, and convert things along the way.",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["./js/content.js"]
     }
   ],
+  "icons": {
+    "16": "here",
+    "32": "here",
+    "48": "here",
+    "128": "here"
+  },
   "browser_action": {
     "default_icon": "./img/logo.png",
     "default_popup": "./html/popup.html"
